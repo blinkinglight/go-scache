@@ -1,11 +1,11 @@
 # streaming cache
 
-single writer multi reader "cache". read while writing.
+single writer multi reader "cache". read while writing. ( not tested, just PoC )
 
 ```go
 func main() {
 
-	t := scache.New()
+	t := scache.New(32000)
 
 	ht := http.Client{}
 	r, _ := ht.Get("http://bigFile.dat")

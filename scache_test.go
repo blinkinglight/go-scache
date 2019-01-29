@@ -25,7 +25,7 @@ func (t *_tmpE) Write(p []byte) (int, error) {
 }
 
 func TestMain(t *testing.T) {
-	h := New(1)
+	h := New(32000)
 
 	var s1 *_tmp = new(_tmp)
 	var s2 *_tmp = new(_tmp)
